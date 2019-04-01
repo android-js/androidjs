@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script> -->
+        <script src = "lib/front.js"></script>
+    </head>
+    <body></body>
+</html>
+<script>
+    // front.send('hello');
+
+    front.send('show-details', {name:'harry'});
+    front.sendSync('get');
+    front.on('get-result', function(response){
+        console.log(response);
+    })
+
+    front.sendSync('get-data',{name:'harry'});
+    front.on('get-data-result', function(response){
+        console.log(response);
+    })
+    front.on('hello', function(res){
+        console.log(res);
+    })
+</script>
