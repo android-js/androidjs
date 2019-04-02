@@ -1,4 +1,4 @@
-var back = require('androidjs').back;
+var back = require('../lib/back.js').back;
 // var app = require('./index.js').app;
 // console.log(back);
 
@@ -22,4 +22,9 @@ back.on('get-data', function(data){
     return data;
 })
 // console.log(app.getPath());
-// back.send('hello', 'harry');
+setInterval(function(){
+    back.send('hello', 'harry');
+}, 5000);
+// while(true){
+//     back.send('hello', 'harry');
+// }
