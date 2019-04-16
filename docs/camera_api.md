@@ -7,7 +7,7 @@ The following example shows how to `init camera` in your app
 <html>
     <head>
         // add androidjs.js to get the API's of `Android JS`.
-        <script src = "./assets/ipc/androidjs.js" />
+        <script src = "./assets/ipc/androidjs.js" ></script>
     </head>
     <body>
         <video id = "camera" autoplay></video>

@@ -7,7 +7,7 @@ The following example shows how to `record audio` in your app
 <html>
     <head>
         // add androidjs.js to get the API's of `Android JS`.
-        <script src = "./assets/ipc/androidjs.js" />
+        <script src = "./assets/ipc/androidjs.js" ></script>
     </head>
     <script>
         window.onload = function(){
