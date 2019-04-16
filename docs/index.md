@@ -12,5 +12,5 @@
   - [Back Module](ipc.md#back-module)
   - [Front Module](ipc.md#front-module)
 - [Camera API](camera_api.md)
-- [Microphone API](microphone.md)
+- [Microphone API](microphone_api.md)
 - [App](app.md)
