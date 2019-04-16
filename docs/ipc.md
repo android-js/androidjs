@@ -20,7 +20,7 @@ back.on('Hello', function(msg){
 <html>
     <head>
         // add androidjs.js to get the API's of `Android Js`.
-        <script src = "./assets/ipc/androidjs.js" />
+        <script src = "./assets/ipc/androidjs.js" ></script>
     </head>
     <script>
         front.send('Hello', 'Hello Android jS');
@@ -63,7 +63,7 @@ Add `Android JS` in your `web page` get the instance of `Front` module.
 <html>
     <head>
         // add androidjs.js to get the API's of `Android Js`.
-        <script src = "./assets/ipc/androidjs.js" />
+        <script src = "./assets/ipc/androidjs.js" ></script>
     </head>
 </html>
 ```

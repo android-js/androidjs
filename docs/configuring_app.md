@@ -75,3 +75,5 @@ In order to add the android permissions, you will have to define an array of `pe
   "license": "ISC"
 }
 ```
+
+you can find the permissions over android official [documentation](https://developer.android.com/guide/topics/permissions/overview)

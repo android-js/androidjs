@@ -8,6 +8,7 @@ Android JS enables you to create android applications with pure JavaScript by pr
 mkdir myfirstapp
 cd myfirstapp
 androidjs g
+npm install
 ```
 it will generate a sample project inside `myfirstapp`
 
