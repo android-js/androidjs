@@ -1,5 +1,5 @@
 # App
-App is an instance of `app` module, which proview various functions to interact with app
+App is an instance of `app` module, which provide various functions to interact with app
 
 ### Methods
 
