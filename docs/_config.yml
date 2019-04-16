@@ -1,1 +1,3 @@
-theme: jekyll-theme-MaterialDocs
+theme: jekyll-materialdocs
+future: true
+timezone: Asia/Kolkata
