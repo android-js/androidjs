@@ -1,4 +1,7 @@
 # Configuring App
+
+`NOTE: All these configurations are mandatory`
+
 #### `Change the name of your app`
 In order to change the name of your app, you'll have to define `app-name` attribute in `package.json` file of your app
 
@@ -77,3 +80,24 @@ In order to add the android permissions, you will have to define an array of `pe
 ```
 
 you can find the permissions over android official [documentation](https://developer.android.com/guide/topics/permissions/overview)
+
+#### `Adding output directory`
+In order to add the output directory, you will have to define `dist-path` in `package.json` file of your app
+
+```json
+{
+  "name": "myfirstapp",
+  "app-name" : "My First App",
+  "package-name": "myapp",
+  "permission": "['android.permission.INTERNET', 'android.permission.SEND_SMS']",
+  "dist-path": "./dist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
