@@ -24,6 +24,7 @@ npm install -g androidjs-builder
 mkdir myfirstapp
 cd myfirstapp
 androidjs g
+npm install
 ```
 it will generate a sample project inside `myfirstapp`
 ```text
@@ -64,9 +65,9 @@ androidjs b
 ```
 it will generate an apk inside dist folder.
 
-## Resources for learning Electron
+## Resources for learning Android JS
 
-- [android-js.github.io/androidjs/docs](https://android-js.github.io/androidjs/docs) - all of Android JS's documentation
+- [android-js.github.io/androidjs/](https://android-js.github.io/androidjs/) - all of Android JS's documentation
 - [android-js/androidjs/sample-app](https://github.com/android-js/sample-app) - sample starter apps created by the community
 
 ## License
