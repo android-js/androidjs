@@ -15,4 +15,5 @@
 - [Microphone API](microphone_api.md)
 - [Notification API](notification_api.md)
 - [Toast API](toast_api.md)
+- [Call API](call_api.md)
 - [App](app.md)
