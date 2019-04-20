@@ -13,4 +13,5 @@
   - [Front Module](ipc.md#front-module)
 - [Camera API](camera_api.md)
 - [Microphone API](microphone_api.md)
+- [Notification API](notification_api.md)
 - [App](app.md)
