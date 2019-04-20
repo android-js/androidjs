@@ -14,4 +14,5 @@
 - [Camera API](camera_api.md)
 - [Microphone API](microphone_api.md)
 - [Notification API](notification_api.md)
+- [Toast API](toast_api.md)
 - [App](app.md)
