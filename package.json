@@ -1,15 +1,19 @@
 {
   "name": "androidjs",
   "version": "1.0.6",
-  "description": "",
+  "description": "Android JS Is A Framework For Creating Android Applications With Web Technologies Like JavaScript, HTML, And CSS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Harendra Chhekur <820121223505e@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "Buffer": "0.0.0",
     "socket.io": "^2.2.0"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/android-js/androidjs"
   }
 }

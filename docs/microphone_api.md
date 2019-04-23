@@ -1,5 +1,11 @@
 # Microphone API
-Microphone API provide the various functions to interact with microphone.
+Microphone API provide the various functions to interact with microphone. In order to use this `API` you need to add these `permissions` to your `package.json` file.
+
+```text
+android.permission.RECORD_AUDIO
+android.permission.MODIFY_AUDIO_SETTINGS
+```
+
 The following example shows how to `record audio` in your app
 
 ```html
