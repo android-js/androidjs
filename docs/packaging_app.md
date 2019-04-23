@@ -7,3 +7,10 @@ cd myfirstapp
 androidjs b
 ```
 It will generate apk file inside `dist` folder
+
+
+If this `build` command generates any error, try to `build` with `force command`
+
+```sh
+androidjs b -f
+```

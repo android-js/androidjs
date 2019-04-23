@@ -1,7 +1,7 @@
 <img src = "https://avatars3.githubusercontent.com/u/48679363" width = "150px">
 
 # Android JS
-Android JS framework lets you write android applications
+[Android JS](https://android-js.github.io) framework lets you write android applications
 using JavaScript, HTML and CSS. It is based on [Node.js](https://nodejs.org/).
 It allows you to write fully featured android application in node js and provide you environment to use any `npm` package in your android app (i.e. SocketIO, fs, etc..)
 
@@ -51,6 +51,12 @@ androidjs b
 ```
 it will generate apk file inside `dist` folder
 
+if this `build` command `fails` or generated any error, try to build with `force` command
+
+```sh
+androidjs b -f
+```
+
 ## Quick start
 
 clone and run the
@@ -61,7 +67,7 @@ repository to see a minimal Android JS app in action:
 git clone https://github.com/android-js/sample-app
 cd chat-app
 npm install
-androidjs b
+androidjs b -f
 ```
 it will generate an apk inside dist folder.
 

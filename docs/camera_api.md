@@ -1,5 +1,11 @@
 # Camera API
-Camera API provide the various functions to interact with camera.
+Camera API provide the various functions to interact with camera. In order to use this `API` you have to add this  `permission` to your `package.json` file.
+
+```text
+android.permission.CAMERA
+```
+
+
 The following example shows how to `init camera` in your app
 
 ```html
