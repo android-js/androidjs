@@ -1,6 +1,6 @@
 {
   "name": "androidjs",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Android JS Is A Framework For Creating Android Applications With Web Technologies Like JavaScript, HTML, And CSS.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,6 @@
   "repository": {
     "type" : "git",
     "url" : "https://github.com/android-js/androidjs"
-  }
+  },
+  "homepage": "https://android-js.github.io"
 }
