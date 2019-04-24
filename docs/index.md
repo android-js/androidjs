@@ -13,6 +13,7 @@
   - [Back Module](ipc.md#back-module)
   - [Front Module](ipc.md#front-module)
 - [Wi-Fi API](wifi_api.md)
+- [Hotspot API](hotspot_api.md)
 - [Camera API](camera_api.md)
 - [Microphone API](microphone_api.md)
 - [Notification API](notification_api.md)
