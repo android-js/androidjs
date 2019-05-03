@@ -29,7 +29,7 @@ Now you will get the following
 ```
 - `views` is a directory to store all the views of your app
 - `index.html` is the first view, render's initially by app (it is must to create `index.html` inside the view folder)
-- add `androidjs.js` file in all of your views to access the API's of `Android JS` (download [here](https://github.com/android-js/androidjs/blob/master/lib/androidjs.js))
+- add `androidjs.js` file in all of your views to access the API's of `Android JS` (download [here](https://github.com/android-js/androidjs/blob/master/build/lib/androidjs.js))
 
 create `main.js` file inside the parent directory
 
