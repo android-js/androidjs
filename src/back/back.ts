@@ -46,6 +46,7 @@ function send(event:string, ...args){
 }
 
 function saveBlobHelper(filepath:string, filename:string, blob:Blob, type:string){
+    console.log('called this function');
     if(type == 'image'){
         let buffer = new Buffer(blob, 'base64');
         fs.writeFile(path.join(filepath, filename), buffer, function(err){

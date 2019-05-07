@@ -1,5 +1,5 @@
 export function getPath(name:string){
-    return window.android.getPath(name);
+    return (<any>window).android.getPath(name);
 }
 
 export function loadURL(url:string){

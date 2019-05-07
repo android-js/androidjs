@@ -1,6 +1,6 @@
 class call {
     public makeCall(number){
-        window.android.makeCall(number);
+        (<any>window).android.makeCall(number);
     }
 }
 

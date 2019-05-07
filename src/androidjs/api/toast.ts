@@ -1,6 +1,6 @@
 class toast {
     public show(text:string, duration){
-        window.android.showToast(text, duration);
+        (<any>window).android.showToast(text, duration);
     }
 }
 

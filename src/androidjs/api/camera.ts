@@ -1,4 +1,4 @@
-import { send } from "src/front/front";
+declare var front:any;
 
 class camera {
     private mediaRecorder:MediaRecorder;
@@ -76,7 +76,7 @@ class camera {
         let reader = new FileReader();
         reader.onload = function(){
             if(reader.readyState == 2){
-                send('androidjs:saveBlob', filepath, filename, reader.result, 'video');
+                front.send('androidjs:saveBlob', filepath, filename, reader.result, 'video');
                 console.log(`saving ${JSON.stringify({filename, size:blob.size})}`);
             }
         }
@@ -123,7 +123,7 @@ class camera {
     }
     public savePhoto(filepath:string, filename:string){
         let data = this.canvas.toDataURL('image/webp').replace(/^data:image\/\w+;base64,/, "");
-        send('androidjs:saveBlob', filepath, filename, data, 'image');
+        front.send('androidjs:saveBlob', filepath, filename, data, 'image');
         console.log('saving file');
     }
 }

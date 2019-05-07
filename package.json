@@ -4,7 +4,8 @@
   "description": "Android JS Is A Framework For Creating Android Applications With Web Technologies Like JavaScript, HTML, And CSS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production && node ./src/build.js"
   },
   "author": "Harendra Chhekur <820121223505e@gmail.com>",
   "license": "MIT",
