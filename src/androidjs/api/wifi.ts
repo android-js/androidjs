@@ -1,30 +1,30 @@
 class wifi {
     public enable():void{
-        window.android.enableWifi();
+        (<any>window).android.enableWifi();
     }
 
     public disable():void{
-        window.android.disableWifi();
+        (<any>window).android.disableWifi();
     }
 
     public disconnect():void{
-        window.android.disconnectWifi();
+        (<any>window).android.disconnectWifi();
     }
 
     public getState(){
-        return window.android.getWifiState();
+        return (<any>window).android.getWifiState();
     }
 
     public isEnabled(){
-        return window.android.isWifiEnabled();
+        return (<any>window).android.isWifiEnabled();
     }
 
     public getScanResults(){
-        return JSON.parse(window.android.getWifiScanResults());
+        return JSON.parse((<any>window).android.getWifiScanResults());
     }
 
     public connect(ssid:string, password:string){
-        window.android.connectWifi(ssid, password);
+        (<any>window).android.connectWifi(ssid, password);
     }
 }
 

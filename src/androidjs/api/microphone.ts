@@ -1,5 +1,4 @@
-import { send } from "src/front/front";
-
+declare var front:any;
 class microphone {
     private mediaRecorder:MediaRecorder;
     private recordedBlobs:Array<Blob>;
@@ -56,7 +55,7 @@ class microphone {
         let reader = new FileReader();
         reader.onload = function(){
             if(reader.readyState == 2){
-                send('androidjs:saveBlob', filepath, filename, reader.result, 'audio');
+                front.send('androidjs:saveBlob', filepath, filename, reader.result, 'audio');
                 console.log(`saving ${JSON.stringify({filename, size:blob.size})}`);
             }
         }
