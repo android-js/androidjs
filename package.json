@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production && node ./src/build.js"
+    "build": "node ./src/build.js"
   },
   "author": "Harendra Chhekur <820121223505e@gmail.com>",
   "license": "MIT",
@@ -14,6 +14,7 @@
     "@types/node": "^11.13.9",
     "Buffer": "0.0.0",
     "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
     "ts-loader": "^5.4.5",
     "typescript": "^3.4.5",
     "webpack": "^4.30.0",

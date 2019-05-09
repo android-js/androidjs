@@ -1,7 +1,7 @@
-import io = require('./socket.io.js');
+import io = require('socket.io-client');
 
 let socket = io('http://localhost:3000');
-let listerners = [];
+let listerners = {};
 
 function addListener(event:string, fn:Function){
     listerners[event] = listerners[event] || [];

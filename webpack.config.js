@@ -3,10 +3,10 @@ const webpack = require("webpack");
 const nodeExternals = require('webpack-node-externals');
 const webpack_rules = [];
 const webpackOption = [{
-    entry: "./src/front/front.ts",
+    entry: "./src/webview/front/front.ts",
     // externals: [nodeExternals()],
     output: {
-        path: path.resolve(__dirname, "dist", "front"),
+        path: path.resolve(__dirname, "dist", "webview", "front"),
         filename: "front.js",
         library:"front",
         libraryTarget:"var"
@@ -19,10 +19,10 @@ const webpackOption = [{
     },
 },
 {
-    entry: "./src/androidjs/androidjs.ts",
+    entry: "./src/webview/androidjs/androidjs.ts",
     // externals: [nodeExternals()],
     output: {
-        path: path.resolve(__dirname, "dist", "androidjs"),
+        path: path.resolve(__dirname, "dist", "webview", "androidjs"),
         filename: "androidjs.js",
         library:"app",
         libraryTarget:"var"
