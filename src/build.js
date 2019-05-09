@@ -4,7 +4,10 @@ const child_process = require('child_process');
 files = [
     ['./src/index.ts', './dist'],
     ['./src/react_native/front/front.ts', './dist/lib'],
-    ['./src/webview/back/back.ts', './dist/lib']
+    ['./src/webview/back/back.ts', './dist/lib'],
+    ['./src/index.ts', './build'],
+    ['./src/react_native/front/front.ts', './build/lib'],
+    ['./src/webview/back/back.ts', './build/lib']
 ]
 
 
@@ -29,7 +32,10 @@ new Promise(function(resolve, reject){
     console.log('building androidjs webview sources');
     new Promise (function (resolve, reject){
         child_process.exec(`webpack --mode production`, function(err, stdout, stderr){
-            if(err) reject(err);
+            if(err) {
+                reject(err);
+                throw err;
+            }
             resolve();
         });
     }).then(function(){
@@ -40,7 +46,10 @@ new Promise(function(resolve, reject){
                 if(err) throw(err);
                 fs.writeFile("./dist/webview/androidjs.js", frontFile + androidjsFile, function(err){
                     if(err) throw(err);
-                    console.log("building done");
+                    fs.writeFile("./build/lib/androidjs.js", frontFile + androidjsFile, function(err){
+                        if(err) throw (err);
+                        console.log("building done");
+                    });
                 })
             })
         })

@@ -1,2 +1,5 @@
-module.exports.back = require('./lib/back.js').back
-module.exports.io = require('./lib/back.js').io
+"use strict";
+module.exports = {
+    back: require("./lib/back"),
+    front: require("./lib/front")
+};
