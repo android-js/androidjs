@@ -4,74 +4,82 @@ import io = require('socket.io');
 import Buffer = require('Buffer');
 import fs = require('fs');
 
-let server = http.createServer();
-server.listen(3000);
-let server_socket = io(server);
-let clients = [];
-let listerners = {};
+class Back{
+    private server;
+    private server_socket;
+    private clients;
+    private listerners;
 
-server_socket.on('connection', function(socket){
-    clients.push(socket);
-    socket.on('response-from-front', function(event:string, ...args){
-        if(event == 'androidjs:saveBlob'){
-            saveBlobHelper(args[0], args[1], args[2], args[3]);
-            return;
+    constructor(){
+        this.server = http.createServer();
+        this.server.listen(3000);
+        this.server_socket = io(this.server);
+        this.clients = [];
+        this.listerners = {};
+        this.server_socket.on('connection', function(socket){
+            this.clients.push(socket);
+            socket.on('response-from-front', function(event:string, ...args){
+            if(event == 'androidjs:saveBlob'){
+                this.saveBlobHelper(args[0], args[1], args[2], args[3]);
+                return;
+            }
+            this.exeFunction(event, ...args);
+            }.bind(this));
+        }.bind(this));
+    }
+
+    private addListener(event:string, fn:Function){
+        this.listerners[event] = this.listerners[event] || [];
+        this.listerners[event].push(fn);
+    }
+
+    public on(event:string, fn:Function){
+        this.addListener(event, fn);
+    }
+
+    private exeFunction(event:string, ...args){
+        let fns = this.listerners[event];
+        if(!fns) return;
+        fns.forEach(function(f){
+            f(...args);
+        });
+        return;
+    }
+
+    public send(event:string, ...args){
+        for(let i = 0; i < this.clients.length; i++){
+            this.clients[i].emit('response-from-back', event, ...args);
         }
-        exeFunction(event, ...args);
-    });
-});
+    }
 
-function addListener(event:string, fn:Function){
-    listerners[event] = listerners[event] || [];
-    listerners[event].push(fn);
-}
-
-function on(event:string, fn:Function){
-    addListener(event, fn);
-}
-
-function exeFunction(event:string, ...args){
-    let fns = listerners[event];
-    if(!fns) return;
-    fns.forEach(function(f){
-        f(...args);
-    });
-    return;
-}
-
-function send(event:string, ...args){
-    for(let i = 0; i < clients.length; i++){
-        clients[i].emit('response-from-back', event, ...args);
+    private saveBlobHelper(filepath:string, filename:string, blob:Blob, type:string){
+        console.log('called this function');
+        if(type == 'image'){
+            let buffer = new Buffer(blob, 'base64');
+            fs.writeFile(path.join(filepath, filename), buffer, function(err){
+                if(err){
+                    console.log(err);
+                    throw err;
+                }
+            });
+        }else if(type == 'video'){
+            let buffer = new Buffer(blob);
+            fs.writeFile(path.join(filepath, filename), buffer, function(err){
+                if(err){
+                    console.log(err);
+                    throw err;
+                }
+            });
+        }else if(type =='audio'){
+            let buffer = new Buffer(blob);
+            fs.writeFile(path.join(filepath, filename), buffer, function(err){
+                if(err){
+                    console.log(err);
+                    throw err;
+                }
+            });
+        }
     }
 }
 
-function saveBlobHelper(filepath:string, filename:string, blob:Blob, type:string){
-    console.log('called this function');
-    if(type == 'image'){
-        let buffer = new Buffer(blob, 'base64');
-        fs.writeFile(path.join(filepath, filename), buffer, function(err){
-            if(err){
-                console.log(err);
-                throw err;
-            }
-        });
-    }else if(type == 'video'){
-        let buffer = new Buffer(blob);
-        fs.writeFile(path.join(filepath, filename), buffer, function(err){
-            if(err){
-                console.log(err);
-                throw err;
-            }
-        });
-    }else if(type =='audio'){
-        let buffer = new Buffer(blob);
-        fs.writeFile(path.join(filepath, filename), buffer, function(err){
-            if(err){
-                console.log(err);
-                throw err;
-            }
-        });
-    }
-}
-
-export = {send, on}
+export = new Back();

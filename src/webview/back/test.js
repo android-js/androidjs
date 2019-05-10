@@ -1,13 +1,9 @@
-// const app = require('http').createServer();
-const server = require('http').createServer();
-const io = require('socket.io')(server);
+const back = require("./back").init();
 
-io.on('connection', (socket) => {
-  console.log(`Client SocketID: ${socket.id}.`);
-  socket.emit('sayHello', {Hello: 'world!'});
-  socket.on('sayHello', (greeting) => {
-    console.log(`Hello, ${greeting['Hello']}`);
-  });
-});
+// setInterval(() => {
+//   back.send('hello');
+// }, (1000));
 
-server.listen(3000);
+back.on("Hello", function(msg){
+  console.log(msg);
+})
