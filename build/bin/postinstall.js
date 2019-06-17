@@ -12,6 +12,13 @@ if(fs.existsSync(json_file)){
             // fs.unlinkSync(path.join('lib', 'back.js'));
             console.log("Making Package To Compatible with React Native");
             fs.writeFileSync(path.join('lib', 'back.js'), '');
+            fs.writeFileSync('index.js', '"use strict";\
+                module.exports = {\
+                    back: require("./lib/back"),\
+                    front: require("./lib/front"),\
+                    app: require("./lib/react_native/androidjs")\
+                };\
+                ')
             console.log("Done");
         }
     }

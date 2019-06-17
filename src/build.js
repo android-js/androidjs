@@ -7,7 +7,11 @@ files = [
     ['./src/webview/back/back.ts', './dist/lib'],
     ['./src/index.ts', './build'],
     ['./src/react_native/front/front.ts', './build/lib'],
-    ['./src/webview/back/back.ts', './build/lib']
+    ['./src/webview/back/back.ts', './build/lib'],
+    ['./src/react_native/androidjs/api/notification.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/androidjs.ts', './dist/react_native'],
+    ['./src/react_native/androidjs/api/notification.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/androidjs.ts', './build/lib/react_native']
 ]
 
 
