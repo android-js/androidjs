@@ -9,11 +9,13 @@ import call = require('./api/call');
 
 export = {
     notification,
-    app,
     camera,
     hotspot,
     microphone,
     toast,
     wifi,
-    call
+    call,
+    getPath: app.getPath,
+    loadUrl: app.loadURL,
+    reload: app.reload
 }
