@@ -9,8 +9,22 @@ files = [
     ['./src/react_native/front/front.ts', './build/lib'],
     ['./src/webview/back/back.ts', './build/lib'],
     ['./src/react_native/androidjs/api/notification.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/app.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/call.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/camera.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/hotspot.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/microphone.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/toast.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/wifi.ts', './dist/react_native/api'],
     ['./src/react_native/androidjs/androidjs.ts', './dist/react_native'],
     ['./src/react_native/androidjs/api/notification.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/app.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/call.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/camera.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/hotspot.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/microphone.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/toast.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/wifi.ts', './build/lib/react_native/api'],
     ['./src/react_native/androidjs/androidjs.ts', './build/lib/react_native']
 ]
 
