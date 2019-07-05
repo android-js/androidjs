@@ -1,9 +1,9 @@
 <img src = "https://avatars3.githubusercontent.com/u/48679363" width = "150px">
 
-# Android JS
+# Android JS 2.0
 [Android JS](https://android-js.github.io) framework lets you write android applications
-using JavaScript, HTML and CSS. It is based on [Node.js](https://nodejs.org/).
-It allows you to write fully featured android application in node js and provide you environment to use any `npm` package in your android app (i.e. SocketIO, fs, etc..)
+using JavaScript, HTML and CSS or React Native with [Node.js](https://nodejs.org/) support. It is based on [Node.js](https://nodejs.org/).
+It allows you to write fully featured android application in `node js` and provide you environment to use any `npm` package in your android app (i.e. SocketIO, fs, etc..)
 
 ## Installation
 
