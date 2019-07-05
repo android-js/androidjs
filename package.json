@@ -1,6 +1,6 @@
 {
   "name": "androidjs",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "Android JS Is A Framework For Creating Android Applications With Web Technologies Like JavaScript, HTML, And CSS.",
   "main": "index.js",
   "scripts": {

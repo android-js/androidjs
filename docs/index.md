@@ -19,4 +19,5 @@
 - [Notification API](notification_api.md)
 - [Toast API](toast_api.md)
 - [Call API](call_api.md)
+- [Contact API](contact_api.md)
 - [App](app.md)

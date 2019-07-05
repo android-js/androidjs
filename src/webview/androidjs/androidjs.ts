@@ -6,6 +6,7 @@ import notification = require('./api/notification');
 import toast = require('./api/toast');
 import wifi = require('./api/wifi');
 import app = require('./api/app');
+import contact = require('./api/contact');
 
 export = {
     camera,
@@ -15,6 +16,7 @@ export = {
     notification,
     toast,
     wifi,
+    contact,
     getPath: app.getPath,
     reload: app.reload,
     loadURL: app.loadURL
