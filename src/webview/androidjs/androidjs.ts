@@ -7,6 +7,7 @@ import toast = require('./api/toast');
 import wifi = require('./api/wifi');
 import app = require('./api/app');
 import contact = require('./api/contact');
+import deeplink = require('./api/deeplink');
 
 export = {
     camera,
@@ -17,6 +18,7 @@ export = {
     toast,
     wifi,
     contact,
+    deeplink,
     getPath: app.getPath,
     reload: app.reload,
     loadURL: app.loadURL

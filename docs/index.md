@@ -20,4 +20,5 @@
 - [Toast API](toast_api.md)
 - [Call API](call_api.md)
 - [Contact API](contact_api.md)
+- [DeepLink API](deeplink_api.md)
 - [App](app.md)

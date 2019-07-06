@@ -1,16 +1,16 @@
 class contact{
-    getAll(){
+    public getAll(){
         return JSON.parse((<any>window).android.getAllContacts());
     }
 
-    getCount(){
+    public getCount(){
         return (<any>window).android.getContactsCount();
     }
     
-    getByName(name){
+    public getByName(name:String){
         return JSON.parse((<any>window).android.getContactByName(name));
     }
-    add(name, number, email){
+    public add(name:String, number:String, email:String){
         if(name == undefined) name = null;
         if(number == undefined) number = null;
         if(email == undefined) email = null;

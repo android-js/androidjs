@@ -5,6 +5,7 @@ import toast = require('./api/toast');
 import wifi = require('./api/wifi');
 import call = require('./api/call');
 import contact = require('./api/contact');
+import deeplink = require('./api/deeplink');
 
 export = {
     notification,
@@ -13,6 +14,7 @@ export = {
     wifi,
     call,
     contact,
+    deeplink,
     getPath: app.getPath,
     loadUrl: app.loadURL,
     reload: app.reload
