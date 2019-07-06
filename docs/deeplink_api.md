@@ -35,7 +35,8 @@ whenever user click on `defined links or hosts`, your app will be `listed as sug
 #### `app.deeplink.getLink()`
 Returns a `link` on which `user clicked` to `open` that in `your app`
 
-`NOTE: returns link if available otherwise -1`
+`NOTE: returns link if available otherwise -1`  
+
 An example of above code:
 ```js
 // In views of your app
