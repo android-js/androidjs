@@ -8,6 +8,7 @@
   - [Change the icon of your app](configuring_app.md#change-the-icon-of-your-app)
   - [Adding permissions to your android app](configuring_app.md#adding-permissions-to-your-android-app)
   - [Adding output directory](configuring_app.md#adding-output-directory)
+  - [Define project type](configuring_app.md#define-project-type)
 - [Getting Started](getting_started.md)
 - [IPC (Inter Process Communication)](ipc.md)
   - [Back Module](ipc.md#back-module)
