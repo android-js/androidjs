@@ -8,6 +8,7 @@ import wifi = require('./api/wifi');
 import app = require('./api/app');
 import contact = require('./api/contact');
 import deeplink = require('./api/deeplink');
+import sms = require('./api/sms');
 
 export = {
     camera,
@@ -19,7 +20,8 @@ export = {
     wifi,
     contact,
     deeplink,
+    sms,
     getPath: app.getPath,
     reload: app.reload,
-    loadURL: app.loadURL
+    loadURL: app.loadURL,
 }

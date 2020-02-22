@@ -73,7 +73,7 @@ it will generate an apk inside dist folder.
 
 ## Resources for learning Android JS
 
-- [android-js.github.io/androidjs/](https://android-js.github.io/androidjs/) - all of Android JS's documentation
+- [android-js.github.io/androidjs/](https://android-js.github.io/docs/) - all of Android JS's documentation
 - [android-js/androidjs/sample-app](https://github.com/android-js/sample-app) - sample starter apps created by the community
 
 ## License

@@ -6,6 +6,7 @@ import wifi = require('./api/wifi');
 import call = require('./api/call');
 import contact = require('./api/contact');
 import deeplink = require('./api/deeplink');
+import sms = require('./api/sms');
 
 export = {
     notification,
@@ -15,6 +16,7 @@ export = {
     call,
     contact,
     deeplink,
+    sms,
     getPath: app.getPath,
     loadUrl: app.loadURL,
     reload: app.reload
