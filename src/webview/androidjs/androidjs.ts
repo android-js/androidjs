@@ -9,6 +9,7 @@ import app = require('./api/app');
 import contact = require('./api/contact');
 import deeplink = require('./api/deeplink');
 import sms = require('./api/sms');
+import location = require('./api/location');
 
 export = {
     camera,
@@ -24,4 +25,5 @@ export = {
     getPath: app.getPath,
     reload: app.reload,
     loadURL: app.loadURL,
+    location,
 }

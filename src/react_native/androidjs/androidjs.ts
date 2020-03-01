@@ -7,6 +7,7 @@ import call = require('./api/call');
 import contact = require('./api/contact');
 import deeplink = require('./api/deeplink');
 import sms = require('./api/sms');
+import location = require('./api/location');
 
 export = {
     notification,
@@ -19,5 +20,6 @@ export = {
     sms,
     getPath: app.getPath,
     loadUrl: app.loadURL,
-    reload: app.reload
+    reload: app.reload,
+    location,
 }

@@ -8,6 +8,7 @@ var call = require("./api/call");
 var contact = require("./api/contact");
 var deeplink = require("./api/deeplink");
 var sms = require("./api/sms");
+var location = require("./api/location");
 module.exports = {
     notification: notification,
     hotspot: hotspot,
@@ -19,5 +20,6 @@ module.exports = {
     sms: sms,
     getPath: app.getPath,
     loadUrl: app.loadURL,
-    reload: app.reload
+    reload: app.reload,
+    location: location
 };
