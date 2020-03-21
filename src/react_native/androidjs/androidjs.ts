@@ -8,6 +8,7 @@ import contact = require('./api/contact');
 import deeplink = require('./api/deeplink');
 import sms = require('./api/sms');
 import location = require('./api/location');
+import mobiledata = require('./api/mobiledata');
 
 export = {
     notification,
@@ -22,4 +23,5 @@ export = {
     loadUrl: app.loadURL,
     reload: app.reload,
     location,
+    mobiledata,
 }

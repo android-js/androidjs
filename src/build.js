@@ -18,6 +18,7 @@ files = [
     ['./src/react_native/androidjs/api/deeplink.ts', './dist/react_native/api'],
     ['./src/react_native/androidjs/api/sms.ts', './dist/react_native/api'],
     ['./src/react_native/androidjs/api/location.ts', './dist/react_native/api'],
+    ['./src/react_native/androidjs/api/mobiledata.ts', './dist/react_native/api'],
     ['./src/react_native/androidjs/androidjs.ts', './dist/react_native'],
     ['./src/react_native/androidjs/api/notification.ts', './build/lib/react_native/api'],
     ['./src/react_native/androidjs/api/app.ts', './build/lib/react_native/api'],
@@ -29,6 +30,7 @@ files = [
     ['./src/react_native/androidjs/api/deeplink.ts', './build/lib/react_native/api'],
     ['./src/react_native/androidjs/api/sms.ts', './build/lib/react_native/api'],
     ['./src/react_native/androidjs/api/location.ts', './build/lib/react_native/api'],
+    ['./src/react_native/androidjs/api/mobiledata.ts', './build/lib/react_native/api'],
     ['./src/react_native/androidjs/androidjs.ts', './build/lib/react_native']
 ]
 
