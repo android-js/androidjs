@@ -5,6 +5,9 @@
 using JavaScript, HTML and CSS or `React Native` with [Node.js](https://nodejs.org/) support. It is based on [Node.js](https://nodejs.org/).
 It allows you to write fully featured android application in `node js` and provide you environment to use any `npm` package in your android app (i.e. SocketIO, fs, etc..)
 
+## Discussion
+[Slack Channel](https://join.slack.com/t/androidjs/shared_invite/zt-e0y0u6z6-hZdwdv1zN9AMbDKxhp7NcQ) for support and discussion
+
 ## Installation
 
 To install Android JS binaries, use [`npm`](https://docs.npmjs.com/).
