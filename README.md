@@ -8,6 +8,9 @@ It allows you to write fully featured android application in `node js` and provi
 ## Discussion
 [Slack Channel](https://join.slack.com/t/androidjs/shared_invite/zt-e0y0u6z6-hZdwdv1zN9AMbDKxhp7NcQ) for support and discussion
 
+## Resources
+<a href="https://github.com/android-js/androidjs/blob/master/build/lib/androidjs.js" target="_blank">AndroidJS.js</a> file - shortcut
+
 ## Installation
 
 To install Android JS binaries, use [`npm`](https://docs.npmjs.com/).
