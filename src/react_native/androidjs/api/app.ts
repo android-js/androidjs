@@ -13,5 +13,5 @@ export function reload():void{
 }
 
 export function exec(cmd:string, args:Array<string> = []){
-    return return JSON.parse(NativeModules.App.exec([cmd].concat(args)));
+    return JSON.parse(NativeModules.App.exec([cmd].concat(args)));
 }
