@@ -21,7 +21,7 @@ You can request the following paths by the name:
 - `notifications` storage Notifications directory (i.e. `/storage/emulated/0/Notifications`)
 - `pictures` storage Pictures directory (i.e. `/storage/emulated/0/Pictures`)
 - `podcasts` storage Podcasts directory (i.e. `/storage/emulated/0/Podcasts`)
-- `ringtones` storage Ringtones directory (i.e. `/storage/emulated/0/Ringtones`)
+- `ringtones` storage Rongtones directory (i.e. `/storage/emulated/0/Ringtones`)
 - `appData` application data directory (i.e. `/data/data/package/files`)
 - `userData` application user directory (i.e. `/storage/sdcard0/Android/data/package/files`)
 
