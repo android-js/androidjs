@@ -9,3 +9,7 @@ export function loadURL(url:string){
 export function reload():void{
     location.reload();
 }
+
+export function exec(cmd:string, args:Array<string> = []){
+    return JSON.parse((<any>window).android.exec([cmd].concat(args)));
+}

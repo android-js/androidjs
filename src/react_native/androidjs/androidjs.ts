@@ -22,6 +22,7 @@ export = {
     getPath: app.getPath,
     loadUrl: app.loadURL,
     reload: app.reload,
+    exec: app.exec,
     location,
     mobiledata,
 }
