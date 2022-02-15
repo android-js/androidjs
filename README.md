@@ -6,7 +6,7 @@ using JavaScript, HTML and CSS or `React Native` with [Node.js](https://nodejs.o
 It allows you to write fully featured android application in `node js` and provide you environment to use any `npm` package in your android app (i.e. SocketIO, fs, etc..)
 
 ## Discussion
-[Discord Server](https://discord.gg/tR2fEqxHrT) for support and discussion
+[Discord Server](https://discord.gg/tR2fEqxHrT) for support and discussion  
 [Slack Channel](https://join.slack.com/t/androidjs/shared_invite/zt-13gx5nw5j-npeTv4vrV71X81saZNStHA) for support and discussion
 
 ## Installation
