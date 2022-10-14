@@ -2,6 +2,10 @@ export function getPath(name:string){
     return (<any>window).android.getPath(name);
 }
 
+export function setDefaultFontSize(fontSize:number){
+    return (<any>window).android.setDefaultFontSize(fontSize);
+}
+
 export function loadURL(url:string){
     location.href = url;
 }

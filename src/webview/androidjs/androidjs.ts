@@ -26,6 +26,7 @@ export = {
     getPath: app.getPath,
     reload: app.reload,
     loadURL: app.loadURL,
+    setDefaultFontSize: app.setDefaultFontSize,
     exec: app.exec,
     location,
     mobiledata,

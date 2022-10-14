@@ -27,6 +27,6 @@
   },
   "homepage": "https://android-js.github.io",
   "devDependencies": {
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^4.10.0"
   }
 }
