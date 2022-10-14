@@ -22,6 +22,7 @@ module.exports = {
     getPath: app.getPath,
     loadUrl: app.loadURL,
     reload: app.reload,
+    exec: app.exec,
     location: location,
     mobiledata: mobiledata
 };

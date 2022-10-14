@@ -1,4 +1,11 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 var path = require("path");
 var http = require("http");
 var io = require("socket.io");
@@ -22,7 +29,7 @@ var Back = /** @class */ (function () {
                     this.saveBlobHelper(args[0], args[1], args[2], args[3]);
                     return;
                 }
-                this.exeFunction.apply(this, [event].concat(args));
+                this.exeFunction.apply(this, __spreadArrays([event], args));
             }.bind(this));
         }.bind(this));
     }
@@ -53,7 +60,7 @@ var Back = /** @class */ (function () {
             args[_i - 1] = arguments[_i];
         }
         for (var i = 0; i < this.clients.length; i++) {
-            (_a = this.clients[i]).emit.apply(_a, ['response-from-back', event].concat(args));
+            (_a = this.clients[i]).emit.apply(_a, __spreadArrays(['response-from-back', event], args));
         }
     };
     Back.prototype.saveBlobHelper = function (filepath, filename, blob, type) {

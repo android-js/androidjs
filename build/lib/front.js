@@ -1,5 +1,13 @@
 "use strict";
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 exports.__esModule = true;
+exports.send = exports.on = void 0;
 var io = require("socket.io-client");
 var socket = io('http://localhost:3000');
 var listerners = {};
@@ -29,7 +37,7 @@ function send(event) {
     for (var _i = 1; _i < arguments.length; _i++) {
         args[_i - 1] = arguments[_i];
     }
-    socket.emit.apply(socket, ['response-from-front', event].concat(args));
+    socket.emit.apply(socket, __spreadArrays(['response-from-front', event], args));
 }
 exports.send = send;
 socket.on('response-from-back', function (event) {
@@ -37,5 +45,5 @@ socket.on('response-from-back', function (event) {
     for (var _i = 1; _i < arguments.length; _i++) {
         args[_i - 1] = arguments[_i];
     }
-    exeFunction.apply(void 0, [event].concat(args));
+    exeFunction.apply(void 0, __spreadArrays([event], args));
 });
