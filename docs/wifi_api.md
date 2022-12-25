@@ -12,7 +12,7 @@ new Promise(function(resolve, reject){
     app.wifi.enable();
     setTimeout(resolve, 5000);
 }).then(function(){
-    available_networks = app.wifi.getScanResult();
+    available_networks = app.wifi.getScanResults();
     available_networks.forEach(function(network){
         if(network.SSID == "test"){
             app.wifi.connect(network.SSID, "");
