@@ -13,7 +13,7 @@
     "@types/dom-mediacapture-record": "^1.0.1",
     "@types/node": "^11.13.9",
     "Buffer": "0.0.0",
-    "react-native": "^0.59.9",
+    "react-native": "^0.71.3",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
     "ts-loader": "^5.4.5",
